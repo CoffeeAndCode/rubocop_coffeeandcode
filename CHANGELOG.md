@@ -5,13 +5,20 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 
 ## [unreleased]
 
+## [0.0.1.beta2] - 2018-03-24
+
 ### Fixed
 
 * Checksum creation code after running `rake release`.
+* Add rubocop_method_order as runtime dependency.
+* Clean up changelog version numbers used to match what was released.
+
+## [0.0.1.beta1] - 2018-03-24
 
 ### Added
 
 * Initial version of the gem.
 
-[unreleased]: https://github.com/CoffeeAndCode/rubocop_coffeeandcode/compare/v0.1.0...HEAD
-[0.1.0]: https://github.com/CoffeeAndCode/rubocop_coffeeandcode/releases/tag/v0.1.0
+[unreleased]: https://github.com/CoffeeAndCode/rubocop_coffeeandcode/compare/v0.0.1.beta2...HEAD
+[0.0.1.beta2]: https://github.com/CoffeeAndCode/rubocop_method_order/compare/v0.0.1.beta1...v0.0.1.beta2
+[0.0.1.beta1]: https://github.com/CoffeeAndCode/rubocop_coffeeandcode/releases/tag/v0.0.1.beta1
