@@ -15,7 +15,9 @@ gem cert --add <(curl -Ls https://raw.github.com/CoffeeAndCode/rubocop_coffeeand
 Then, add this line to your application's Gemfile:
 
 ```ruby
-gem 'rubocop_coffeeandcode'
+group :development, :test do
+  gem 'rubocop_coffeeandcode'
+end
 ```
 
 And then execute:
@@ -39,7 +41,11 @@ inherit_gem:
     - config/default.yml
     - config/rails.yml
 
-# the rest of your customized config...
+inherit_mode:
+  merge:
+    - Exclude
+
+# the rest of your app's custom config...
 ```
 
 ## Development
@@ -53,9 +59,17 @@ To install this gem onto your local machine, run `bundle exec rake install`.
 Make sure that the project has no errors when running `bundle exec rake` which
 will run `rubocop` on the project source and `bundle exec rake test`.
 
-To release a new version, update the version number in `lib/rubocop_coffeeandcode/version.rb` and run `bundle exec rake release`, which will create a git tag for the version, push
-git commits and tags, and push the `.gem` file to [rubygems.org][2].
-Afterwards, a new checksum will be generated for the gem which should
+To release a new version, update the version number in `lib/rubocop_coffeeandcode/version.rb` and run `bin/release`, which will do
+the following:
+
+* run tests
+* run linters
+* create a git tag for the version
+* push git commits and tags
+* push the `.gem` file to [rubygems.org][2]
+* create checksums of new version
+
+New checksum will be generated for the latest gem version which should
 be added to the `master` branch.
 
 ## Contributing

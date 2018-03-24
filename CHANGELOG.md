@@ -5,6 +5,15 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 
 ## [unreleased]
 
+### Added
+
+* Info about `inherit_mode` to allow exclusions from included configs.
+* New `bin/release` script to make sure tests are ran before release.
+
+### Changed
+
+* Increase max line length to 120 characters from 100.
+
 ## [0.0.1.beta2] - 2018-03-24
 
 ### Fixed
