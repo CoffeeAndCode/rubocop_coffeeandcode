@@ -1,0 +1,18 @@
+AllCops:
+  Exclude:
+    - db/schema.rb
+    - db/migrate/*.rb
+    - log/*
+    - tmp/**/*
+
+Metrics/BlockLength:
+  Exclude:
+    - config/environments/*
+    - config/routes.rb
+    - lib/tasks/**/*
+
+Rails:
+  Enabled: true
+
+Style/Documentation:
+  Enabled: false
