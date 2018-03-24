@@ -5,7 +5,9 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 
 ## [unreleased]
 
-## [0.1.0] - 2018-03-24
+### Fixed
+
+* Checksum creation code after running `rake release`.
 
 ### Added
 

@@ -15,14 +15,14 @@ Rake::Task['release'].enhance do
   require 'digest/sha2'
   require_relative './lib/rubocop_coffeeandcode/version'
 
-  built_gem_path = "pkg/rubocop_coffeeandcode-#{RuboCopMethodOrder.gem_version}.gem"
+  built_gem_path = "pkg/rubocop_coffeeandcode-#{RuboCopCoffeeAndCode.gem_version}.gem"
 
   checksum = Digest::SHA256.new.hexdigest(File.read(built_gem_path))
-  checksum_path = "checksums/rubocop_coffeeandcode-#{RuboCopMethodOrder.gem_version}.gem.sha256"
+  checksum_path = "checksums/rubocop_coffeeandcode-#{RuboCopCoffeeAndCode.gem_version}.gem.sha256"
   File.open(checksum_path, 'w') { |file| file.write(checksum) }
 
   checksum = Digest::SHA512.new.hexdigest(File.read(built_gem_path))
-  checksum_path = "checksums/rubocop_coffeeandcode-#{RuboCopMethodOrder.gem_version}.gem.sha512"
+  checksum_path = "checksums/rubocop_coffeeandcode-#{RuboCopCoffeeAndCode.gem_version}.gem.sha512"
   File.open(checksum_path, 'w') { |file| file.write(checksum) }
 end
 
