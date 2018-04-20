@@ -5,6 +5,8 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 
 ## [unreleased]
 
+## [0.0.1] - 2018-04-20
+
 ### Added
 
 * Info about `inherit_mode` to allow exclusions from included configs.
@@ -29,6 +31,7 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 
 * Initial version of the gem.
 
-[unreleased]: https://github.com/CoffeeAndCode/rubocop_coffeeandcode/compare/v0.0.1.beta2...HEAD
+[unreleased]: https://github.com/CoffeeAndCode/rubocop_coffeeandcode/compare/v0.0.1...HEAD
+[0.0.1]: https://github.com/CoffeeAndCode/rubocop_method_order/compare/v0.0.1.beta1...v0.0.1
 [0.0.1.beta2]: https://github.com/CoffeeAndCode/rubocop_method_order/compare/v0.0.1.beta1...v0.0.1.beta2
 [0.0.1.beta1]: https://github.com/CoffeeAndCode/rubocop_coffeeandcode/releases/tag/v0.0.1.beta1
