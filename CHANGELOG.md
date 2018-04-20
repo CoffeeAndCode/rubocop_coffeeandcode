@@ -9,6 +9,7 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 
 * Info about `inherit_mode` to allow exclusions from included configs.
 * New `bin/release` script to make sure tests are ran before release.
+* Add git commit with checksums as part of release task.
 
 ### Changed
 
