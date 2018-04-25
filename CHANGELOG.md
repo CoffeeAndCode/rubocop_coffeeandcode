@@ -5,6 +5,8 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 
 ## [unreleased]
 
+## [0.0.2] - 2018-04-25
+
 ### Changed
 
 * Bump rubocop_method_order dependency from 0.2.1 to 0.3.0
@@ -35,7 +37,8 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 
 * Initial version of the gem.
 
-[unreleased]: https://github.com/CoffeeAndCode/rubocop_coffeeandcode/compare/v0.0.1...HEAD
+[unreleased]: https://github.com/CoffeeAndCode/rubocop_coffeeandcode/compare/v0.0.2...HEAD
+[0.0.2]: https://github.com/CoffeeAndCode/rubocop_method_order/compare/v0.0.1...v0.0.2
 [0.0.1]: https://github.com/CoffeeAndCode/rubocop_method_order/compare/v0.0.1.beta1...v0.0.1
 [0.0.1.beta2]: https://github.com/CoffeeAndCode/rubocop_method_order/compare/v0.0.1.beta1...v0.0.1.beta2
 [0.0.1.beta1]: https://github.com/CoffeeAndCode/rubocop_coffeeandcode/releases/tag/v0.0.1.beta1
