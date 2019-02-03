@@ -7,6 +7,9 @@ AllCops:
     - node_modules/**/*
   TargetRubyVersion: 2.4
 
+Bundler/OrderedGems:
+  TreatCommentsAsGroupSeparators: false
+
 Layout/EmptyLinesAroundArguments:
   Enabled: false # disabled as current implimentation is buggy
 
