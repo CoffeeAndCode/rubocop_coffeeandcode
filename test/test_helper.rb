@@ -6,5 +6,5 @@ require 'minitest/autorun'
 require_relative 'support/rubocop_helpers'
 begin
   require 'byebug'
-rescue LoadError # rubocop:disable Lint/HandleExceptions
+rescue LoadError # rubocop:disable Lint/SuppressedException
 end

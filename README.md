@@ -44,7 +44,6 @@ inherit_gem:
 inherit_mode:
   merge:
     - Exclude
-
 # the rest of your app's custom config...
 ```
 
@@ -62,13 +61,20 @@ will run `rubocop` on the project source and `bundle exec rake test`.
 To release a new version, update the version number in `lib/rubocop_coffeeandcode/version.rb` and run `bin/release`, which will do
 the following:
 
-* run tests
-* run linters
-* create a git tag for the version
-* push git commits and tags
-* push the `.gem` file to [rubygems.org][2]
-* create checksums of new version
-* create new git commit that adds new checksum files to the repo
+- run tests
+- run linters
+- create a git tag for the version
+- push git commits and tags
+- push the `.gem` file to [rubygems.org][2]
+- create checksums of new version
+- create new git commit that adds new checksum files to the repo
+
+### Increasing Current Certificate Expiration
+
+Once a certificate expires, it can be re-signed to extend the expiration using the existing
+private key with:
+
+`gem cert --certificate ./certs/coffeeandcode.pem --days 365 --private-key ~/.ssh/gem-private_key.pem --re-sign`
 
 ## Contributing
 

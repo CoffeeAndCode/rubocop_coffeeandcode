@@ -5,13 +5,16 @@ AllCops:
   Exclude:
     - bin/bundle
     - node_modules/**/*
-  TargetRubyVersion: 2.4
+  TargetRubyVersion: 2.6
 
 Bundler/OrderedGems:
   TreatCommentsAsGroupSeparators: false
 
 Layout/EmptyLinesAroundArguments:
   Enabled: false # disabled as current implimentation is buggy
+
+Layout/LineLength:
+  Max: 120
 
 Metrics/BlockLength:
   Exclude:
@@ -20,9 +23,6 @@ Metrics/BlockLength:
 Metrics/ClassLength:
   Exclude:
     - test/**/*_test.rb
-
-Metrics/LineLength:
-  Max: 120
 
 Metrics/MethodLength:
   Exclude:
