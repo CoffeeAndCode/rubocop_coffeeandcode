@@ -30,7 +30,7 @@ Gem::Specification.new do |spec| # rubocop:disable Metrics/BlockLength
     spec.signing_key = File.expand_path('~/.ssh/gem-private_key.pem')
   end
 
-  spec.add_runtime_dependency 'rubocop', '~> 0.79'
+  spec.add_runtime_dependency 'rubocop', '>= 0.79', '< 2.0'
   spec.add_runtime_dependency 'rubocop_method_order', '~> 0.3.0'
 
   spec.add_development_dependency 'bundler', '~> 2.1'
